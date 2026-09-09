@@ -67,7 +67,14 @@ section{position:relative; padding:110px 8vw;}
 @keyframes pulse{0%,100%{opacity:.3;}50%{opacity:1;}}
 
 #flowchart{background:var(--near-black); color:var(--cream);}
-.ladder-wrap{max-width:680px; margin:50px auto 0; background:rgba(255,255,255,.02); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:30px 26px;}
+.stage-grid{display:grid; gap:12px; margin-top:42px;}
+.stage-card{display:grid; grid-template-columns:46px 1fr auto; gap:16px; align-items:center; padding:18px 20px; border:1px solid rgba(255,255,255,.1); border-radius:10px; background:rgba(255,255,255,.03);}
+.stage-card.current{border-color:var(--gold); background:rgba(227,172,31,.09); box-shadow:0 0 0 1px rgba(227,172,31,.16);}
+.stage-num{width:38px; height:38px; display:grid; place-items:center; border-radius:50%; background:var(--gold); color:var(--black); font-family:'Bebas Neue'; font-size:1.25rem;}
+.stage-card h3{font-size:1.05rem; color:var(--cream);}
+.stage-card p{margin:4px 0 0; font-size:.78rem; line-height:1.45; color:#bdb5a5;}
+.stage-marker{font-size:.65rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-light); white-space:nowrap;}
+@media (max-width:640px){.stage-card{grid-template-columns:40px 1fr}.stage-marker{grid-column:2}.stage-card p{font-size:.75rem}}
 
 #toc{background:var(--cream); padding:90px 8vw;}
 .toc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); border:1px solid var(--line); margin-top:44px;}
@@ -186,7 +193,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
     <div class="cover-kicker">Stage 3 &middot; Urban Muaythai Academy &middot; Invitation Only</div>
     <h1 class="cover-title">Urban<br><em>Development Squad</em></h1>
     <p class="cover-sub">&ldquo;Where Potential Becomes Performance.&rdquo;</p>
-    <div class="cover-tag">An Invitation-Only Performance Program &middot; Green Singlet+</div>
+    <div class="cover-tag">An Invitation-Only Performance Program &middot; Blue Singlet+</div>
   </div>
   <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
 </section>
@@ -195,8 +202,14 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   <div class="section-inner reveal">
     <div class="eyebrow">Where You Are</div>
     <h2 class="section-title">The Urban Muaythai Academy</h2>
-    <p class="section-lede">The Development Squad is Stage 3 &mdash; the honours program for committed teens who have mastered the fundamentals and earned the opportunity to train differently.</p>
-    <div class="ladder-wrap"><svg viewBox="0 0 620 288" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg"><g opacity="1"><rect x="0" y="8" width="620" height="56" rx="8" fill="#17171a" stroke="rgba(255,255,255,.15)" stroke-width="2" /><circle cx="40" cy="36.0" r="18" fill="#e3ac1f"/><text x="40" y="42.0" text-anchor="middle" font-family="Playfair Display" font-weight="800" font-size="18" fill="#151215">1</text><text x="76" y="32.0" font-family="Playfair Display" font-weight="700" font-size="21" fill="#cfc7b8">Kids Academy</text><text x="76" y="54.0" font-family="Inter" font-size="12.5" fill="#cfc7b8" opacity="0.8">Ages 7–10 &#8226; Building Confidence & Fundamentals</text></g><line x1="40" y1="64" x2="40" y2="80" stroke="#4a453d" stroke-width="2" stroke-dasharray="3,5"/><polygon points="40,78 33,67 47,67" fill="#4a453d"/><g opacity="1"><rect x="0" y="80" width="620" height="56" rx="8" fill="#17171a" stroke="rgba(255,255,255,.15)" stroke-width="2" /><circle cx="40" cy="108.0" r="18" fill="#e3ac1f"/><text x="40" y="114.0" text-anchor="middle" font-family="Playfair Display" font-weight="800" font-size="18" fill="#151215">2</text><text x="76" y="104.0" font-family="Playfair Display" font-weight="700" font-size="21" fill="#cfc7b8">Teen Academy</text><text x="76" y="126.0" font-family="Inter" font-size="12.5" fill="#cfc7b8" opacity="0.8">Ages 11–17 &#8226; 3-Year Adult Grading Pathway</text></g><line x1="40" y1="136" x2="40" y2="152" stroke="#4a453d" stroke-width="2" stroke-dasharray="3,5"/><polygon points="40,150 33,139 47,139" fill="#4a453d"/><g opacity="1"><rect x="0" y="152" width="620" height="56" rx="8" fill="#151517" stroke="#e3ac1f" stroke-width="2" /><circle cx="40" cy="180.0" r="18" fill="#ffffff"/><text x="40" y="186.0" text-anchor="middle" font-family="Playfair Display" font-weight="800" font-size="18" fill="#151517">3</text><text x="76" y="176.0" font-family="Playfair Display" font-weight="700" font-size="21" fill="#ffffff">Development Squad</text><text x="76" y="198.0" font-family="Inter" font-size="12.5" fill="#ffffff" opacity="0.8">Green Singlet+ · Invitation Only &#8226; Technique · Fight IQ · Fitness · Leadership</text><text x="596" y="185.0" text-anchor="end" font-family="Inter" font-weight="700" font-size="11" letter-spacing="1.5" fill="#ffffff">YOU ARE HERE</text></g><line x1="40" y1="208" x2="40" y2="224" stroke="#4a453d" stroke-width="2" stroke-dasharray="3,5"/><polygon points="40,222 33,211 47,211" fill="#4a453d"/><g opacity="0.5"><rect x="0" y="224" width="620" height="56" rx="8" fill="#17171a" stroke="rgba(255,255,255,.15)" stroke-width="2" stroke-dasharray="8,6"/><circle cx="40" cy="252.0" r="18" fill="#e3ac1f"/><text x="40" y="258.0" text-anchor="middle" font-family="Playfair Display" font-weight="800" font-size="18" fill="#151215">4</text><text x="76" y="248.0" font-family="Playfair Display" font-weight="700" font-size="21" fill="#cfc7b8">Fight Team / Coach Pathway</text><text x="76" y="270.0" font-family="Inter" font-size="12.5" fill="#cfc7b8" opacity="0.8">The Journey Continues &#8226; Competition · Coaching · Leadership</text></g></svg></div>
+    <p class="section-lede">The Teens Development Squad is Stage 3 of the five-stage Academy pathway &mdash; the honours program for committed teens who have mastered the fundamentals and earned the opportunity to train differently.</p>
+    <div class="stage-grid" aria-label="Urban Muaythai Academy pathway">
+      <div class="stage-card"><div class="stage-num">1</div><div><h3>Kids Academy</h3><p>Ages 7-10 &middot; Building Confidence &amp; Fundamentals</p></div></div>
+      <div class="stage-card"><div class="stage-num">2</div><div><h3>Teen Academy</h3><p>Ages 11-15 &middot; 3-Year Adult Grading Pathway</p></div></div>
+      <div class="stage-card current" aria-current="step"><div class="stage-num">3</div><div><h3>Teens Development Squad</h3><p>Blue Singlet &middot; Invitation Only &middot; Technique &middot; Fight IQ &middot; Fitness &middot; Leadership</p></div><div class="stage-marker">You Are Here</div></div>
+      <div class="stage-card"><div class="stage-num">4</div><div><h3>Adult Pathway</h3><p>15 yr + &middot; Fundamentals &middot; Fitness &middot; Skills &middot; Confidence &middot; Community</p></div></div>
+      <div class="stage-card"><div class="stage-num">5</div><div><h3>Fight Team / Coach Pathway</h3><p>Green Singlet+ &middot; Competition &middot; Coaching &middot; Leadership</p></div></div>
+    </div>
   </div>
 </section>
 
@@ -206,7 +219,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
     <h2 class="section-title">The Development Squad</h2>
     <div class="toc-grid">
       <div class="toc-item" data-target="welcome"><div class="toc-num">01</div><div><h4>Welcome & Mission</h4><p>Develop elite young martial artists.</p></div></div>
-      <div class="toc-item" data-target="selection"><div class="toc-num">02</div><div><h4>Eligibility & Selection</h4><p>Green Singlet+. Not automatic &mdash; earned.</p></div></div>
+      <div class="toc-item" data-target="selection"><div class="toc-num">02</div><div><h4>Eligibility & Selection</h4><p>Blue Singlet+. Not automatic &mdash; earned.</p></div></div>
       <div class="toc-item" data-target="outcomes"><div class="toc-num">03</div><div><h4>Selection Outcomes</h4><p>Selected, Developing, or Future Potential.</p></div></div>
       <div class="toc-item" data-target="pillars"><div class="toc-num">04</div><div><h4>The Four Pillars</h4><p>Technical, Fight IQ, Athletic, Leadership.</p></div></div>
       <div class="toc-item" data-target="levels"><div class="toc-num">05</div><div><h4>Squad Levels</h4><p>Bronze, Silver, Gold.</p></div></div>
@@ -234,7 +247,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   <div class="section-inner reveal">
     <div class="eyebrow">Chapter 02</div>
     <h2 class="section-title">Eligibility &amp; Selection</h2>
-    <p class="section-lede">Once a student achieves Green Singlet, they become <em>eligible</em> &mdash; not automatically accepted &mdash; for the Development Squad.</p>
+    <p class="section-lede">Once a student achieves Blue Singlet, they become <em>eligible</em> &mdash; not automatically accepted &mdash; for the Development Squad.</p>
     <div class="crit-row">
       <div class="crit-pill">Attendance</div><div class="crit-pill">Coachability</div><div class="crit-pill">Respect</div>
       <div class="crit-pill">Technical Standard</div><div class="crit-pill">Fitness</div><div class="crit-pill">Desire</div><div class="crit-pill">Leadership</div>
@@ -346,7 +359,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   <div class="section-inner reveal">
     <div class="eyebrow" style="justify-content:center;">Chapter 09</div>
     <h2 class="section-title">What's Next</h2>
-    <p class="section-lede" style="margin:18px auto 0;">Competition isn't the goal &mdash; it's simply another pathway. Once athletes reach Purple Singlet, new opportunities open.</p>
+    <p class="section-lede" style="margin:18px auto 0;">The Academy journey continues with Stage 4, the Adult Pathway for ages 15+, and Stage 5, the Fight Team / Coach Pathway from Green Singlet. Competition, coaching and leadership offer different ways to keep developing.</p>
     <div class="path-row">
       <div class="path-card"><h4>Competition Pathway</h4><p>Development Days &rarr; Hard Spars &rarr; Development Shows &rarr; First Fight &rarr; Fight Team Try Outs</p></div>
       <div class="path-card"><h4>Leadership Pathway</h4><p>Development Squad &rarr; Assistant Coach &rarr; Kids Helper &rarr; Pad Holder &rarr; Junior Coach &rarr; Senior Instructor</p></div>
