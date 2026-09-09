@@ -47,7 +47,7 @@ section{position:relative; padding:110px 8vw;}
 .on-dark .section-title{color:var(--cream);}
 .section-lede{max-width:640px; margin-top:18px; font-size:1.08rem;}
 .on-dark .section-lede{color:#cfc7b8;}
-.reveal{opacity:0; transform:translateY(28px); transition:opacity .8s ease, transform .8s ease;}
+.reveal{opacity:1; transform:none;}
 .reveal.in-view{opacity:1; transform:translateY(0);}
 .reveal.d1{transition-delay:.08s;} .reveal.d2{transition-delay:.16s;} .reveal.d3{transition-delay:.24s;} .reveal.d4{transition-delay:.32s;}
 
@@ -163,6 +163,18 @@ footer .fq{font-family:'Playfair Display'; font-style:italic; max-width:540px; m
 footer .fc{margin-top:30px; font-size:.85rem; letter-spacing:.08em; color:var(--gold-light);}
 footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255,255,255,.08); font-size:.72rem; letter-spacing:.05em;}
 
+
+/* Light reading surfaces keep prospectus text clear on every display. */
+#welcome.reading-light,#outcomes.reading-light,#schedule.reading-light,#values2.reading-light{background:var(--cream);color:var(--ink);}
+.reading-light .section-title,.reading-light h4,.reading-light .sched-row2 b{color:var(--ink);}
+.reading-light .section-lede,.reading-light p{color:#514a40;}
+.reading-light .eyebrow{color:var(--red-mid);}
+.reading-light .pull-quote,.reading-light .outcome-card{background:var(--paper);border-color:#c9b991;}
+.reading-light .pull-quote{border-left-color:var(--gold-dark);}
+.reading-light .pull-quote p{color:var(--ink);}
+.reading-light .pull-quote span,.reading-light .outcome-card .onum,.reading-light .sched-row2 .day{color:#80600e;}
+.reading-light .sched-row2{border-bottom-color:#c9b991;}
+
 @media print{ .side-nav,.site-header,.progress-bar,.scroll-cue{display:none !important;} }
 </style>
 </head>
@@ -231,7 +243,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   </div>
 </section>
 
-<section id="welcome" class="on-dark">
+<section id="welcome" class="reading-light">
   <div class="section-inner reveal">
     <div class="eyebrow">Chapter 01</div>
     <h2 class="section-title">Welcome</h2>
@@ -265,7 +277,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   </div>
 </section>
 
-<section id="outcomes" class="on-dark">
+<section id="outcomes" class="reading-light">
   <div class="section-inner reveal">
     <div class="eyebrow">Chapter 03</div>
     <h2 class="section-title">Selection Outcomes</h2>
@@ -305,7 +317,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   </div>
 </section>
 
-<section id="schedule" class="on-dark">
+<section id="schedule" class="reading-light">
   <div class="section-inner reveal">
     <div class="eyebrow">Chapter 06</div>
     <h2 class="section-title">Weekly Schedule</h2>
@@ -340,7 +352,7 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   </div>
 </section>
 
-<section id="values2" class="on-dark">
+<section id="values2" class="reading-light">
   <div class="section-inner reveal">
     <div class="eyebrow">Chapter 08</div>
     <h2 class="section-title">Core Values</h2>
